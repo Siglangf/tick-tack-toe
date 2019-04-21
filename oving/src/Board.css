@@ -1,0 +1,49 @@
+.board-row {
+  clear: both;
+  content: "";
+  display: table;
+}
+.status-text {
+  font-size: 30px;
+  background-color: lightcoral;
+  border: 1px dashed;
+  color: blue;
+  text-align: center;
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+}
+.boarder {
+  height: 216px;
+  width: 218px;
+  border: 5px solid;
+  margin-top: 10px;
+  margin-left: calc(50% - 105px);
+  animation-duration: 4s;
+  animation-name: bounceIn;
+}
+@keyframes bounceIn {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
